@@ -2,7 +2,7 @@
 
 //getting apps in a ArrayList
 
-public ArrayList<HashMap<String, Object>> appList() {{
+public void appList() {{
 
         PackageManager pm = myContext.getPackageManager();
 
