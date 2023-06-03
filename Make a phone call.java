@@ -21,6 +21,9 @@ Cursor cursor = getContentResolver().query(ContactsContract.CommonDataKinds.Phon
 	   }
 
   }
+
+// Calling a specific number using contact name
+
 int n = 0;
 
 Boolean notC = false;
