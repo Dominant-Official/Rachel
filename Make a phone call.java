@@ -60,6 +60,6 @@ n = 0;
 
 if (notC) {
 
-	SketchwareUtil.showMessage(getApplicationContext(), "No contact exists");
+	showMessage(getApplicationContext(), "No contact exists");
 
 }
