@@ -21,3 +21,45 @@ Cursor cursor = getContentResolver().query(ContactsContract.CommonDataKinds.Phon
 	   }
 
   }
+int n = 0;
+
+Boolean notC = false;
+String contact = "Contact name";
+
+for(int _repeat12 = 0; _repeat12 < (int)(contacts.size()); _repeat12++) {
+
+	if (contacts.get((int)n).get("name").toString().toLowerCase().equals(contact)) {
+		notC = false;
+
+		Intent sendIntent = new Intent();
+
+		sendIntent.setAction(Intent.ACTION_CALL);
+
+		sendIntent.setData(Uri.parse("tel:" + contacts.get((int)n).get("phone").toString()));
+
+		startActivity(sendIntent);
+
+
+		break;
+
+	}
+
+	else {
+
+		n++;
+
+		aggCmdOn = true;
+
+		notC = true;
+
+	}
+
+}
+
+n = 0;
+
+if (notC) {
+
+	SketchwareUtil.showMessage(getApplicationContext(), "No contact exists");
+
+}
