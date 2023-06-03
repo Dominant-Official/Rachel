@@ -1,4 +1,7 @@
 //below code is use to open a app from list of installed applications.
+
+//getting apps in a ArrayList
+
 public ArrayList<HashMap<String, Object>> appList() {{
 
         PackageManager pm = myContext.getPackageManager();
