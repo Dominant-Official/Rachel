@@ -51,8 +51,6 @@ for(int _repeat12 = 0; _repeat12 < (int)(contacts.size()); _repeat12++) {
 
 		n++;
 
-		aggCmdOn = true;
-
 		notC = true;
 
 	}
